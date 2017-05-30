@@ -1,0 +1,28 @@
+var express = require('express'),
+  app = express(),
+  port = process.env.PORT || 3000;
+  //mongoose = require('mongoose'),
+  var server = require('./server')
+//  var vehicleModel = require('./api/models/trackingModel');
+//  var vehicleController = require('./api/models/trackingController');
+  var bodyParser = require('body-parser');
+//
+// mongoose.Promise = global.Promise;
+// mongoose.connect('mongodb://localhost/Tododb');
+
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+
+
+var routes = require('./api/routes/trackingRoute');
+routes(app);
+
+
+app.listen(port);
+
+app.use(function(req, res) {
+  res.status(404).send({url: req.originalUrl + ' not found'})
+});
+console.log('vehicle tracking RESTful API server started on: ' + port);

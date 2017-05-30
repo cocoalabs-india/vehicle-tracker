@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "vehicle-tracking-ef829",
+    "vehicle-tracking": "vehicle-tracking-ef829"
+  }
+}

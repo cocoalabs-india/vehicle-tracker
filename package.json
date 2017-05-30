@@ -1,0 +1,23 @@
+{
+  "name": "vehicle-tracking",
+  "version": "1.0.0",
+  "description": "vehicle-tracking",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vehicle"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "debug-log": "^1.0.1",
+    "express": "^4.15.3",
+    "firebase": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
